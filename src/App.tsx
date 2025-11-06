@@ -1,3 +1,5 @@
+import { Button } from "./components/ui/button"
+
 function App() {
   return (
     <div className="min-h-screen p-8 bg-00">
@@ -102,6 +104,43 @@ function App() {
             >
               Disabled Button
             </button>
+          </div>
+        </section>
+
+        {/* Shadcn Buttons Section */}
+        <section className="space-y-4">
+          <h2 className="text-title-2xl text-neutral-primary">
+            Boutons Shadcn
+          </h2>
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <h3 className="text-title-lg text-neutral-primary">Variants</h3>
+              <div className="flex flex-wrap gap-4">
+                <Button variant="default">Default</Button>
+                <Button variant="destructive">Destructive</Button>
+                <Button variant="outline">Outline</Button>
+                <Button variant="secondary">Secondary</Button>
+                <Button variant="ghost">Ghost</Button>
+                <Button variant="link">Link</Button>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <h3 className="text-title-lg text-neutral-primary">Tailles</h3>
+              <div className="flex flex-wrap items-center gap-4">
+                <Button size="sm">Small</Button>
+                <Button size="default">Default</Button>
+                <Button size="lg">Large</Button>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <h3 className="text-title-lg text-neutral-primary">États</h3>
+              <div className="flex flex-wrap gap-4">
+                <Button>Enabled</Button>
+                <Button disabled>Disabled</Button>
+              </div>
+            </div>
           </div>
         </section>
 
