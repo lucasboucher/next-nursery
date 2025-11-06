@@ -1,24 +1,24 @@
 function App() {
   return (
-    <div className="min-h-screen p-8" style={{ backgroundColor: 'var(--background-color-00)' }}>
+    <div className="min-h-screen p-8 bg-00">
       <div className="max-w-7xl mx-auto space-y-12">
         
         {/* Header */}
         <header className="space-y-2">
-          <h1 className="text-title-4xl" style={{ color: 'var(--text-color-neutral-primary)' }}>
+          <h1 className="text-title-4xl text-neutral-primary">
             Aperçu des Composants
           </h1>
-          <p className="text-base" style={{ color: 'var(--text-color-neutral-secondary)' }}>
+          <p className="text-base text-neutral-secondary">
             Système de design avec Tailwind v4 et tokens CSS personnalisés
           </p>
         </header>
 
         {/* Typography Section */}
         <section className="space-y-4">
-          <h2 className="text-title-2xl" style={{ color: 'var(--text-color-neutral-primary)' }}>
+          <h2 className="text-title-2xl text-neutral-primary">
             Typographie
           </h2>
-          <div className="space-y-3 p-6 rounded-lg" style={{ backgroundColor: 'var(--background-color-01)' }}>
+          <div className="space-y-3 p-6 rounded-lg bg-01">
             <p className="text-title-4xl">Title 4XL - 3.5rem</p>
             <p className="text-title-3xl">Title 3XL - 2rem</p>
             <p className="text-title-2xl">Title 2XL - 1.75rem</p>
@@ -33,94 +33,71 @@ function App() {
 
         {/* Colors Section */}
         <section className="space-y-4">
-          <h2 className="text-title-2xl" style={{ color: 'var(--text-color-neutral-primary)' }}>
+          <h2 className="text-title-2xl text-neutral-primary">
             Couleurs
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="space-y-2">
-              <div className="h-20 rounded-lg" style={{ backgroundColor: 'var(--background-color-target-02)' }}></div>
-              <p className="text-xs" style={{ color: 'var(--text-color-neutral-secondary)' }}>Target</p>
+              <div className="h-20 rounded-lg bg-target-02"></div>
+              <p className="text-xs text-neutral-secondary">Target</p>
             </div>
             <div className="space-y-2">
-              <div className="h-20 rounded-lg" style={{ backgroundColor: 'var(--background-color-turquoise-02)' }}></div>
-              <p className="text-xs" style={{ color: 'var(--text-color-neutral-secondary)' }}>Turquoise</p>
+              <div className="h-20 rounded-lg bg-turquoise-02"></div>
+              <p className="text-xs text-neutral-secondary">Turquoise</p>
             </div>
             <div className="space-y-2">
-              <div className="h-20 rounded-lg" style={{ backgroundColor: 'var(--background-color-light-blue-02)' }}></div>
-              <p className="text-xs" style={{ color: 'var(--text-color-neutral-secondary)' }}>Light Blue</p>
+              <div className="h-20 rounded-lg bg-light-blue-02"></div>
+              <p className="text-xs text-neutral-secondary">Light Blue</p>
             </div>
             <div className="space-y-2">
-              <div className="h-20 rounded-lg" style={{ backgroundColor: 'var(--background-color-green-02)' }}></div>
-              <p className="text-xs" style={{ color: 'var(--text-color-neutral-secondary)' }}>Green</p>
+              <div className="h-20 rounded-lg bg-green-02"></div>
+              <p className="text-xs text-neutral-secondary">Green</p>
             </div>
             <div className="space-y-2">
-              <div className="h-20 rounded-lg" style={{ backgroundColor: 'var(--background-color-orange-02)' }}></div>
-              <p className="text-xs" style={{ color: 'var(--text-color-neutral-secondary)' }}>Orange</p>
+              <div className="h-20 rounded-lg bg-orange-02"></div>
+              <p className="text-xs text-neutral-secondary">Orange</p>
             </div>
             <div className="space-y-2">
-              <div className="h-20 rounded-lg" style={{ backgroundColor: 'var(--background-color-purple-02)' }}></div>
-              <p className="text-xs" style={{ color: 'var(--text-color-neutral-secondary)' }}>Purple</p>
+              <div className="h-20 rounded-lg bg-purple-02"></div>
+              <p className="text-xs text-neutral-secondary">Purple</p>
             </div>
             <div className="space-y-2">
-              <div className="h-20 rounded-lg" style={{ backgroundColor: 'var(--background-color-danger-04)' }}></div>
-              <p className="text-xs" style={{ color: 'var(--text-color-neutral-secondary)' }}>Danger</p>
+              <div className="h-20 rounded-lg bg-danger-04"></div>
+              <p className="text-xs text-neutral-secondary">Danger</p>
             </div>
             <div className="space-y-2">
-              <div className="h-20 rounded-lg" style={{ backgroundColor: 'var(--background-color-neutral-invert-00)' }}></div>
-              <p className="text-xs" style={{ color: 'var(--text-color-neutral-secondary)' }}>Neutral Dark</p>
+              <div className="h-20 rounded-lg bg-neutral-invert-00"></div>
+              <p className="text-xs text-neutral-secondary">Neutral Dark</p>
             </div>
           </div>
         </section>
 
         {/* Buttons Section */}
         <section className="space-y-4">
-          <h2 className="text-title-2xl" style={{ color: 'var(--text-color-neutral-primary)' }}>
+          <h2 className="text-title-2xl text-neutral-primary">
             Boutons
           </h2>
           <div className="flex flex-wrap gap-4">
             <button 
-              className="px-6 py-3 rounded-lg text-base transition-colors"
-              style={{ 
-                backgroundColor: 'var(--background-color-button-primary-01)',
-                color: 'var(--text-color-neutral-invert-primary)'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--background-color-button-primary-state-01-hover)'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--background-color-button-primary-01)'}
+              className="px-6 py-3 rounded-lg text-base transition-colors bg-button-primary-01 text-neutral-invert-primary hover:bg-button-primary-state-01-hover"
             >
               Primary Button
             </button>
             
             <button 
-              className="px-6 py-3 rounded-lg text-base transition-colors"
-              style={{ 
-                backgroundColor: 'var(--background-color-button-primary-02)',
-                color: 'var(--text-color-neutral-primary)',
-                border: '2px solid var(--border-color-neutral-primary)'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--background-color-neutral-state-00-hover)'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--background-color-button-primary-02)'}
+              className="px-6 py-3 rounded-lg text-base transition-colors bg-button-primary-02 text-neutral-primary border-2 border-neutral-primary hover:bg-neutral-state-00-hover"
             >
               Secondary Button
             </button>
 
             <button 
-              className="px-6 py-3 rounded-lg text-base transition-colors"
-              style={{ 
-                backgroundColor: 'var(--background-color-danger-04)',
-                color: 'var(--text-color-neutral-invert-primary)'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--background-color-danger-state-04-hover)'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--background-color-danger-04)'}
+              className="px-6 py-3 rounded-lg text-base transition-colors bg-danger-04 text-neutral-invert-primary hover:bg-danger-state-04-hover"
             >
               Danger Button
             </button>
 
             <button 
-              className="px-6 py-3 rounded-lg text-base opacity-50 cursor-not-allowed"
-              style={{ 
-                backgroundColor: 'var(--background-color-button-primary-state-01-disabled)',
-                color: 'var(--text-color-neutral-secondary)'
-              }}
+              className="px-6 py-3 rounded-lg text-base opacity-50 cursor-not-allowed bg-button-primary-state-01-disabled text-neutral-secondary"
               disabled
             >
               Disabled Button
@@ -130,51 +107,33 @@ function App() {
 
         {/* Cards Section */}
         <section className="space-y-4">
-          <h2 className="text-title-2xl" style={{ color: 'var(--text-color-neutral-primary)' }}>
+          <h2 className="text-title-2xl text-neutral-primary">
             Cartes
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div 
-              className="p-6 rounded-lg space-y-3 shadow-md"
-              style={{ 
-                backgroundColor: 'var(--background-color-01)',
-                border: '1px solid var(--border-color-neutral-secondary)'
-              }}
-            >
-              <h3 className="text-title-lg" style={{ color: 'var(--text-color-neutral-primary)' }}>
+            <div className="p-6 rounded-lg space-y-3 shadow-md bg-01 border border-neutral-secondary">
+              <h3 className="text-title-lg text-neutral-primary">
                 Carte Standard
               </h3>
-              <p className="text-sm" style={{ color: 'var(--text-color-neutral-secondary)' }}>
+              <p className="text-sm text-neutral-secondary">
                 Une carte avec bordure neutre et fond de base
               </p>
             </div>
 
-            <div 
-              className="p-6 rounded-lg space-y-3 shadow-md"
-              style={{ 
-                backgroundColor: 'var(--background-color-turquoise-00)',
-                border: '2px solid var(--border-color-highlight-primary)'
-              }}
-            >
-              <h3 className="text-title-lg" style={{ color: 'var(--text-color-semantic-info-primary)' }}>
+            <div className="p-6 rounded-lg space-y-3 shadow-md bg-turquoise-00 border-2 border-highlight-primary">
+              <h3 className="text-title-lg text-semantic-info-primary">
                 Carte Highlight
               </h3>
-              <p className="text-sm" style={{ color: 'var(--text-color-neutral-secondary)' }}>
+              <p className="text-sm text-neutral-secondary">
                 Une carte mise en avant avec bordure turquoise
               </p>
             </div>
 
-            <div 
-              className="p-6 rounded-lg space-y-3 shadow-md"
-              style={{ 
-                backgroundColor: 'var(--background-color-danger-01)',
-                border: '2px solid var(--border-color-danger-primary)'
-              }}
-            >
-              <h3 className="text-title-lg" style={{ color: 'var(--text-color-semantic-danger-primary)' }}>
+            <div className="p-6 rounded-lg space-y-3 shadow-md bg-danger-01 border-2 border-danger-primary">
+              <h3 className="text-title-lg text-semantic-danger-primary">
                 Carte Danger
               </h3>
-              <p className="text-sm" style={{ color: 'var(--text-color-neutral-secondary)' }}>
+              <p className="text-sm text-neutral-secondary">
                 Une carte d'avertissement avec bordure rouge
               </p>
             </div>
@@ -183,44 +142,20 @@ function App() {
 
         {/* Tags Section */}
         <section className="space-y-4">
-          <h2 className="text-title-2xl" style={{ color: 'var(--text-color-neutral-primary)' }}>
+          <h2 className="text-title-2xl text-neutral-primary">
             Tags
           </h2>
           <div className="flex flex-wrap gap-3">
-            <span 
-              className="px-4 py-2 rounded-full text-sm"
-              style={{ 
-                backgroundColor: 'var(--background-color-tags-primary)',
-                color: 'var(--text-color-neutral-invert-primary)'
-              }}
-            >
+            <span className="px-4 py-2 rounded-full text-sm bg-tags-primary text-neutral-invert-primary">
               Primary Tag
             </span>
-            <span 
-              className="px-4 py-2 rounded-full text-sm"
-              style={{ 
-                backgroundColor: 'var(--background-color-tags-secondary)',
-                color: 'var(--text-color-neutral-primary)'
-              }}
-            >
+            <span className="px-4 py-2 rounded-full text-sm bg-tags-secondary text-neutral-primary">
               Secondary Tag
             </span>
-            <span 
-              className="px-4 py-2 rounded-full text-sm"
-              style={{ 
-                backgroundColor: 'var(--background-color-tags-danger-solid)',
-                color: 'var(--text-color-neutral-invert-primary)'
-              }}
-            >
+            <span className="px-4 py-2 rounded-full text-sm bg-tags-danger-solid text-neutral-invert-primary">
               Danger Solid
             </span>
-            <span 
-              className="px-4 py-2 rounded-full text-sm"
-              style={{ 
-                backgroundColor: 'var(--background-color-tags-danger-soft)',
-                color: 'var(--text-color-semantic-danger-primary)'
-              }}
-            >
+            <span className="px-4 py-2 rounded-full text-sm bg-tags-danger-soft text-semantic-danger-primary">
               Danger Soft
             </span>
           </div>
@@ -228,39 +163,27 @@ function App() {
 
         {/* Status Messages */}
         <section className="space-y-4">
-          <h2 className="text-title-2xl" style={{ color: 'var(--text-color-neutral-primary)' }}>
+          <h2 className="text-title-2xl text-neutral-primary">
             Messages de Statut
           </h2>
           <div className="space-y-3">
-            <div 
-              className="p-4 rounded-lg"
-              style={{ backgroundColor: 'var(--background-color-green-00)' }}
-            >
-              <p className="text-base" style={{ color: 'var(--text-color-semantic-success-primary)' }}>
+            <div className="p-4 rounded-lg bg-green-00">
+              <p className="text-base text-semantic-success-primary">
                 ✓ Succès - Opération terminée avec succès
               </p>
             </div>
-            <div 
-              className="p-4 rounded-lg"
-              style={{ backgroundColor: 'var(--background-color-turquoise-00)' }}
-            >
-              <p className="text-base" style={{ color: 'var(--text-color-semantic-info-primary)' }}>
+            <div className="p-4 rounded-lg bg-turquoise-00">
+              <p className="text-base text-semantic-info-primary">
                 ℹ Info - Information importante pour l'utilisateur
               </p>
             </div>
-            <div 
-              className="p-4 rounded-lg"
-              style={{ backgroundColor: 'var(--background-color-orange-00)' }}
-            >
-              <p className="text-base" style={{ color: 'var(--text-color-semantic-warning-primary)' }}>
+            <div className="p-4 rounded-lg bg-orange-00">
+              <p className="text-base text-semantic-warning-primary">
                 ⚠ Attention - Action nécessitant votre attention
               </p>
             </div>
-            <div 
-              className="p-4 rounded-lg"
-              style={{ backgroundColor: 'var(--background-color-danger-01)' }}
-            >
-              <p className="text-base" style={{ color: 'var(--text-color-semantic-danger-primary)' }}>
+            <div className="p-4 rounded-lg bg-danger-01">
+              <p className="text-base text-semantic-danger-primary">
                 ✕ Erreur - Une erreur s'est produite
               </p>
             </div>
